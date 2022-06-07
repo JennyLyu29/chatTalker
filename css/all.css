@@ -43,6 +43,29 @@ h2 {
   border-radius: 12px;
 }
 
+.top {
+  display: inline-block;
+  font-family: 'Wendy One';
+  font-size: 24px;
+  color: white;
+  background: #56C4C5;
+  padding: 18px;
+  border-radius: 99em;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  z-index: 2;
+}
+
+@media (max-width: 375px) {
+  .top {
+    font-size: 16px;
+    padding: 16px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
 header {
   position: relative;
   background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg) no-repeat right top;
