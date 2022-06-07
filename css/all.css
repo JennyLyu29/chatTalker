@@ -1,0 +1,723 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #221E1F;
+  line-height: 46px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+header {
+  position: relative;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg) no-repeat right top;
+  background-size: contain;
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+}
+
+header nav .logo {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true);
+  background-size: cover;
+  height: 40px;
+  width: 218px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bottom-1 {
+  background: #FF5D50;
+  color: white;
+  padding: 8px 32px;
+  border-radius: 22px;
+  border: 1px solid #FF5D50;
+}
+
+.bottom-1:hover {
+  color: #FF5D50;
+  background: white;
+}
+
+.ball-1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 138px;
+  height: 360px;
+  background-position: right;
+  top: calc(100vh - 180px);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  header {
+    background-image: none;
+  }
+  header nav {
+    border-bottom: 2px solid #FFD153;
+    margin-right: -36px;
+    margin-left: -36px;
+  }
+  header nav .logo {
+    margin-left: 36px;
+  }
+  .bottom-1 {
+    margin-right: 36px;
+  }
+  .ball-1 {
+    width: 100px;
+    height: 240px;
+    background-size: 240px;
+    top: calc(100vh - 120px);
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header nav {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 16px 0;
+  }
+  header nav .logo {
+    margin-left: 20px;
+    height: 24px;
+    width: 131px;
+    margin-top: 8px;
+  }
+  .bottom-1 {
+    margin-right: 20px;
+  }
+  .ball-1 {
+    width: 49px;
+    height: 126px;
+    background-size: 126px;
+    top: 100vh;
+  }
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner-word {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-word h2 {
+  color: #56C4C5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.banner-word h3 {
+  color: #221E1F;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-top: 8px;
+}
+
+.banner-word h4 {
+  margin-top: 16px;
+  color: #221E1F;
+  font-size: 20px;
+}
+
+.banner-bg {
+  padding-top: 30px;
+  width: 50%;
+  font-size: 0px;
+}
+
+@media (max-width: 767px) {
+  .banner-word {
+    width: 100%;
+  }
+  .banner-word h2 {
+    margin-top: 20px;
+  }
+  .banner-bg {
+    text-align: center;
+    width: 100%;
+    padding-top: 0;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg) no-repeat;
+    background-position: 50% 100%;
+    background-size: 80%;
+  }
+  .banner-bg img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-word h2 {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+  .banner-word h3 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .banner-word h4 {
+    font-size: 16px;
+  }
+  .banner-bg {
+    padding-top: 32px;
+    background-size: 100%;
+    background-position: 50% 100%;
+  }
+  .banner-bg img {
+    padding-bottom: 10px;
+    width: 85%;
+  }
+}
+
+.platform h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.platformlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  color: #221E1F;
+}
+
+.platformlist-item {
+  width: 30%;
+}
+
+.platformlist-item img {
+  width: 90px;
+  margin-top: 48px;
+}
+
+.platformlist-item h3 {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #221E1F;
+}
+
+.platformlist-item p {
+  margin-top: 24px;
+  color: #747474;
+  line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  .platformlist-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .platform h2 {
+    font-size: 28px;
+    margin-top: 60px;
+  }
+  .platformlist h3 {
+    margin-top: 16px;
+    font-size: 18px;
+    font-size: 26px;
+  }
+  .platformlist p {
+    margin-top: 16px;
+  }
+  .platformlist img {
+    width: 60px;
+    margin-top: 32px;
+  }
+}
+
+.serve {
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.serve h3 {
+  font-size: 20px;
+  margin-top: 16px;
+  color: #221E1F;
+  line-height: 29px;
+}
+
+.serve .servelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 48px;
+  margin-left: -1%;
+  margin-right: -1%;
+}
+
+.serve .servelist-item {
+  width: 23%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: white;
+}
+
+.serve .servelist-item img {
+  border-radius: 12px 12px 0px 0px;
+  display: block;
+}
+
+.serve .servelist-item h4 {
+  font-weight: bold;
+  color: #56C4C5;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.serve .servelist-item p {
+  line-height: 24px;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  color: #221E1F;
+}
+
+.serve .ball-2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 310px;
+  background-position: left;
+  background-size: cover;
+  bottom: -220px;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .serve h3 {
+    font-size: 18px;
+  }
+  .serve .servelist-item {
+    width: 48%;
+    margin-bottom: 32px;
+  }
+  .serve .ball-2 {
+    width: 105px;
+    height: 200px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 375px) {
+  .serve h2 {
+    font-size: 28px;
+  }
+  .serve h3 {
+    font-size: 18px;
+  }
+  .serve .servelist {
+    margin-top: 32px;
+  }
+  .serve .servelist-item {
+    width: 98%;
+    margin: 0 38px 24px 38px;
+  }
+  .serve .ball-2 {
+    width: 88px;
+    height: 135px;
+    background-size: cover;
+    bottom: -20px;
+  }
+}
+
+.feature {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #221E1F;
+}
+
+.featurelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.featurelist-item {
+  width: 44%;
+  margin-bottom: 28px;
+  margin-right: 6%;
+  padding: 32px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  background: white;
+}
+
+.featurelist h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.featurelist p {
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ellipse {
+  width: 86px;
+  height: 86px;
+  border-radius: 99em;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer p {
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.bottom-2 {
+  display: inline-block;
+  padding: 12px 32px;
+  color: white;
+  background: #56C4C5;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+}
+
+.bottom-2:hover {
+  color: #56C4C5;
+  background: white;
+}
+
+@media (max-width: 767px) {
+  .feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .featurelist {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 100px;
+  }
+  .featurelist-item {
+    width: 44%;
+    margin-bottom: 32px;
+    margin-right: 0%;
+  }
+  .customer {
+    width: 100%;
+  }
+  .customer-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .feature {
+    margin-top: 28px;
+  }
+  .customer h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .customer p {
+    font-size: 16px;
+  }
+  .featurelist {
+    margin-top: 32px;
+  }
+  .featurelist-item {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+}
+
+.evaluate {
+  color: #221E1F;
+  margin-top: 100px;
+  position: relative;
+}
+
+.evaluate h2 {
+  text-align: center;
+}
+
+.evaluate .ball-3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  top: -20px;
+  left: 50px;
+  z-index: -1;
+}
+
+.evaluatelist {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.evaluatelist-item {
+  width: 32%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  position: relative;
+  background: white;
+}
+
+.evaluatelist-item .hr1 {
+  border: 1px solid #dddddd8a;
+  margin: 24px 0;
+}
+
+.evaluatelist-item span {
+  font-weight: bold;
+}
+
+.star {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.star img {
+  padding-right: 4px;
+}
+
+.user {
+  position: absolute;
+  top: -55px;
+  width: 80px;
+  height: auto;
+}
+
+.user img {
+  border-radius: 99em;
+  -webkit-filter: drop-shadow(0px 2px 10px #00000014);
+          filter: drop-shadow(0px 2px 10px #00000014);
+}
+
+.pagination {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .dot {
+  border-radius: 50px;
+  margin: 0 4px;
+  height: 10px;
+}
+
+.pagination .dot-1 {
+  background: #DDDDDD;
+  width: 10px;
+}
+
+.pagination .dot-2 {
+  background: #FFD153;
+  width: 16px;
+}
+
+@media (max-width: 767px) {
+  .evaluatelist-item {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .pagination {
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 375px) {
+  .evaluate {
+    margin-top: 60px;
+  }
+  .evaluate h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .evaluate .ball-3 {
+    width: 77px;
+    height: 153px;
+    background-position: right;
+    top: 40px;
+    left: 0px;
+  }
+  .evaluatelist-item .hr1 {
+    margin: 16px 0;
+  }
+}
+
+.footer-plan {
+  margin-top: 100px;
+  text-align: center;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+  background-repeat: repeat-x;
+  background-position: center top;
+  height: 503px;
+}
+
+.footer-plan h2 {
+  padding-top: 260px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 767px) {
+  .footer-plan h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-plan {
+    margin-top: 60px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+    height: 461px;
+  }
+  .footer-plan h2 {
+    font-size: 24px;
+    line-height: 35px;
+    padding-top: 293px;
+    margin-bottom: 24px;
+  }
+}
+
+footer {
+  color: #221E1F;
+  text-align: center;
+  background: #F5F5F5;
+  line-height: 56px;
+}
+/*# sourceMappingURL=all.css.map */
